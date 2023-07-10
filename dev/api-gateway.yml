@@ -9,6 +9,10 @@ spring:
           uri: lb://ms-authentication
           predicates:
             - Path=/api/auth/**
+        - id: ms-client
+          uri: lb://ms-client
+          predicates:
+            - Path=/api/clients/**
         - id: ms-account
           uri: lb://ms-account
           predicates:
