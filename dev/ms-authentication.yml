@@ -6,6 +6,9 @@ spring:
     mongodb:
       uri: mongodb://db-bank:6hQqzADbN2C1Z15AUeqyOD8mwKglR3RXho28IFRnNRejLaiLaEAw3APki87waxRZgbPdS4WhrfSkACDb9g1Vpw==@db-bank.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@db-bank@
       database: bank
+  jackson:
+    serialization:
+      fail-on-empty-beans: 'false'
 
 jwt:
   secret: secret
