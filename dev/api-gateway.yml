@@ -13,6 +13,8 @@ spring:
           uri: lb://ms-client
           predicates:
             - Path=/api/clients/**
+          filters:
+            - AutorizacionFilter
         - id: ms-account
           uri: lb://ms-account
           predicates:
