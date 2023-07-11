@@ -16,7 +16,6 @@ jwt:
 public-paths:
   paths:
     - uri: "/api/wallet/create"
-    - uri: "/api/auth/*"
 
 eureka:
   client:
