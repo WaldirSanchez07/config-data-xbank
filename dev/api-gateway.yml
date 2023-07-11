@@ -9,12 +9,6 @@ spring:
           uri: lb://ms-authentication
           predicates:
             - Path=/api/auth/**
-        - id: ms-client
-          uri: lb://ms-client
-          predicates:
-            - Path=/api/clients/**
-          # filters:
-          #   - AutorizacionFilter
         - id: ms-wallet
           uri: lb://ms-wallet
           predicates:
