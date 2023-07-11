@@ -1,6 +1,16 @@
 server:
   port: 8093
 
+spring:
+  mail:
+    host: smtp.gmail.com
+    port: 465
+    username: wcsp.service@gmail.com
+    password: atrtfaxrdmrozjzk
+    protocol: smtp
+    properties:
+      "mail.smtp.ssl.enable": true
+
 eureka:
   client:
     service-url:
