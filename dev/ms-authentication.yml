@@ -13,10 +13,6 @@ spring:
 jwt:
   secret: secret
 
-public-paths:
-  paths:
-    - uri: "/api/wallet/create"
-
 eureka:
   client:
     service-url:
