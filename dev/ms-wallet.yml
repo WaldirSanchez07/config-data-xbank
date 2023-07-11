@@ -4,7 +4,8 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://db-bank:6hQqzADbN2C1Z15AUeqyOD8mwKglR3RXho28IFRnNRejLaiLaEAw3APki87waxRZgbPdS4WhrfSkACDb9g1Vpw==@db-bank.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@db-bank@
+      uri: mongodb://wcspservice:FuRpYY1wsSkVGNpR@ac-hpdsx2q-shard-00-00.6fecff2.mongodb.net:27017,ac-hpdsx2q-shard-00-01.6fecff2.mongodb.net:27017,ac-hpdsx2q-shard-00-02.6fecff2.mongodb.net:27017/?replicaSet=atlas-12h4j2-shard-0&ssl=true&authSource=admin
+      # uri: mongodb://db-bank:6hQqzADbN2C1Z15AUeqyOD8mwKglR3RXho28IFRnNRejLaiLaEAw3APki87waxRZgbPdS4WhrfSkACDb9g1Vpw==@db-bank.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@db-bank@
       database: bank
 
 eureka:
