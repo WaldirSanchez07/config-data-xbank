@@ -13,8 +13,12 @@ spring:
           uri: lb://ms-wallet
           predicates:
             - Path=/api/wallet/**
-          # filters:
-          #   - AutorizacionFilter
+          filters:
+            - AutorizacionFilter
+        - id: ms-sendmail
+          uri: lb://ms-sendmail
+          predicates:
+            - Path=/api/sendmail/**
             
 eureka:
   client:
