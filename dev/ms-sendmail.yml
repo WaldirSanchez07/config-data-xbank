@@ -11,6 +11,9 @@ spring:
     properties:
       "mail.smtp.ssl.enable": true
 
+kafka:
+  uri: localhost:9092
+
 eureka:
   client:
     service-url:

@@ -9,6 +9,9 @@ spring:
       database: bank
       auto-index-creation: true
 
+kafka:
+  uri: localhost:9092
+
 eureka:
   client:
     service-url:
