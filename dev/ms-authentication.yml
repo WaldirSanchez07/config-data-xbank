@@ -16,7 +16,7 @@ jwt:
 eureka:
   client:
     service-url:
-      defaultZone: http://service-registry-container:8761/eureka/
+      defaultZone: http://20.121.179.189
     fetch-registry: true
     register-with-eureka: true
     enabled: true
