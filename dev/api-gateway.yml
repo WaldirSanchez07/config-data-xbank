@@ -20,8 +20,8 @@ spring:
           predicates:
             - Path=/api/sendmail/**
 
-ms-auth:
-  uri: http://ms-authentication-container
+auth:
+  url: http://ms-authentication-container
 
 eureka:
   client:
