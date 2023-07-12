@@ -19,7 +19,10 @@ spring:
           uri: lb://ms-sendmail
           predicates:
             - Path=/api/sendmail/**
-            
+
+auth:
+  url: http://ms-authentication
+
 eureka:
   client:
     service-url:
