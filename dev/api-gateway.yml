@@ -6,7 +6,7 @@ spring:
     gateway:
       routes:
         - id: ms-authentication
-          uri: lb://ms-authentication-container
+          uri: lb://ms-authentication-container:80
           predicates:
             - Path=/api/auth/**
         - id: ms-wallet
