@@ -21,7 +21,7 @@ spring:
             - Path=/api/sendmail/**
 
 ms-auth:
-  uri: http://ms-authentication-container:8091
+  uri: http://ms-authentication-container
 
 eureka:
   client:
