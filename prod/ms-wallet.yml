@@ -1,22 +1,21 @@
 server:
-  port: 8091
+  port: 8092
 
 spring:
   data:
     mongodb:
       uri: mongodb://wcspservice:FuRpYY1wsSkVGNpR@ac-hpdsx2q-shard-00-00.6fecff2.mongodb.net:27017,ac-hpdsx2q-shard-00-01.6fecff2.mongodb.net:27017,ac-hpdsx2q-shard-00-02.6fecff2.mongodb.net:27017/?replicaSet=atlas-12h4j2-shard-0&ssl=true&authSource=admin
+      # uri: mongodb://db-bank:6hQqzADbN2C1Z15AUeqyOD8mwKglR3RXho28IFRnNRejLaiLaEAw3APki87waxRZgbPdS4WhrfSkACDb9g1Vpw==@db-bank.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@db-bank@
       database: bank
-  jackson:
-    serialization:
-      fail-on-empty-beans: 'false'
+      auto-index-creation: true
 
-jwt:
-  secret: secret
+kafka:
+  uri: localhost:9092
 
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:80/eureka
+      defaultZone: http://localhost:8761/eureka
     fetch-registry: true
     register-with-eureka: true
     enabled: true
