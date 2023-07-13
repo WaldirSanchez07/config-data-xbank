@@ -6,7 +6,7 @@ spring:
     gateway:
       routes:
         - id: ms-authentication
-          uri: lb://ms-authentication:8091
+          uri: lb://ms-authentication
           predicates:
             - Path=/api/auth/**
         - id: ms-wallet
@@ -21,12 +21,12 @@ spring:
             - Path=/api/sendmail/**
 
 auth:
-  url: http://ms-authentication-container:80
+  url: http://ms-authentication-svc
 
 eureka:
   client:
     service-url:
-      defaultZone: http://service-registry-container:80/eureka
+      defaultZone: http://service-registry-svc:8761/eureka
     fetch-registry: true
     register-with-eureka: true
     enabled: true
