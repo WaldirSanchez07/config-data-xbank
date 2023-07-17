@@ -4,6 +4,14 @@ server:
 spring:
   cloud:
     gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:4200"
+            allowedHeaders: "*"
+            allowedMethods:
+            - GET
+            - POST
       routes:
         - id: ms-authentication
           uri: http://ms-authentication-svc:8091
